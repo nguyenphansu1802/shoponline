@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#063035"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product "
+            android:textColor="#BCBA2B"
+            android:textStyle="italic|bold"
+            android:textSize="36dp"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID Product:"
+            android:textColor="#E5E6EC"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+
+
+            />
+        <EditText
+            android:id="@+id/edittext_IDProduct"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="140dp"
+            android:background="@drawable/btn_signup"
+            android:hint="ID"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <Button
+            android:text="Find"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="#BDF1AE"
+            android:id="@+id/btn_SearchProductId"
+            android:textColor="#111112"
+            android:padding="5dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textColor="#E5E6EC"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            />
+        <EditText
+            android:id="@+id/edittext_NameProduct"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:background="@drawable/btn_signup"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Type:"
+            android:textColor="#E5E6EC"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+
+            />
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="140dp"
+            android:background="@drawable/btn_spinner"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price:"
+            android:textColor="#E5E6EC"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+
+            />
+        <EditText
+            android:id="@+id/edittext_PriceProduct"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:background="@drawable/btn_signup"
+            android:ems="10"
+            android:hint="Price Products"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total products:"
+            android:textColor="#E5E6EC"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+
+            />
+        <EditText
+            android:id="@+id/edittext_totalproduct"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:background="@drawable/btn_signup"
+            android:ems="10"
+            android:hint="Total Products"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="420dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Condition:"
+            android:textColor="#E5E6EC"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+
+            />
+        <CheckBox
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/check_Condition"
+            android:text="Active"
+            android:padding="10dp"
+            android:layout_marginLeft="140dp"
+            android:textColor="#171719"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:checked="true"
+            android:background="@drawable/btn_signup"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="480dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageview_ImageProduct"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="16dp"
+            android:background="#5A8DE8"
+
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Button
+            android:id="@+id/btn_chooseimage"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="120dp"
+            android:background="#fff"
+            android:onClick="chooseImage"
+            android:padding="5dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="Choose Image"
+            android:textColor="#151212"
+            android:textStyle="bold" />
+        <Button
+            android:text="Add"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:background="#113707"
+            android:id="@+id/btn_AddProduct"
+            android:textColor="#F1F6FD"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:layout_marginLeft="260dp"
+            android:textStyle="bold"
+
+            />
+        <Button
+            android:text="Update"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:background="#0735DA"
+            android:id="@+id/btn_UpdateProduct"
+            android:textColor="#E8F8F8"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="70dp"
+            android:padding="5dp"
+
+            android:textStyle="bold"
+            />
+        <Button
+            android:text="Delete"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:background="#ED1E0F"
+            android:id="@+id/btn_DeleteProduct"
+            android:textColor="#F8F4F4"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="120dp"
+            android:padding="5dp"
+
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="620dp"
+        >
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
